@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign In</h2>
+        <form action="action_page.php" method="post">
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" maxlength="13" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="977-1234567">
+            </div>
+            <div class="form-group">
+                <label>Title:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="title" value="Mr"> Mr</label>
+                    <label><input type="radio" name="title" value="Mrs"> Mrs</label>
+                    <label><input type="radio" name="title" value="prefer not to say"> Prefer not to say</label>
+                </div>
+            </div>
+            <div class="btn-container">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,233 @@
+/* ==== UNIVERSAL BODY STYLES ==== */
+body {
+    margin: 0;
+    background-color: rgb(20, 19, 19); /* dark theme */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center; /* optional */
+}
+
+/* ==== SIGN-IN FORM ONLY === */
+.form-container {
+    background: #fff;
+    color: black;
+    font-family: Arial, sans-serif; /* ✅ Only here */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+/* form-specific styles */
+h2 {
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif; /* optional, consistent with form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+input[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+/* ==== NAVBAR STYLES ==== */
+.navbar {
+    background-color: rgb(19, 18, 18);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.navbar img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 5px solid rgb(94, 23, 23);
+    margin-right: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-grow: 1;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: rgb(231, 231, 44);
+    color: black;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.nav {
+    background-color: black;
+    border-radius: 10px;
+    padding: 12px 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav:hover {
+    background-color: rgb(231, 231, 44);
+    color: black;
+    transform: scale(1.1);
+}
+
+/* ==== CENTER TEXT SECTION ==== */
+.center-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 24px;
+    font-style: italic;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* ==== SEARCH BAR ==== */
+.search {
+    --padding: 14px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background: rgb(230, 213, 213);
+    transition: background 0.25s;
+    margin: 20px auto;
+}
+
+.search:focus-within {
+    background: #f1f1f1;
+}
+
+.search-input {
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    color: black;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 800px;
+}
+
+.search-input::placeholder,
+.search-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* ==== TEXT & PARAGRAPH ==== */
+h3 {
+    text-align: center;
+    font-size: 28px;
+    margin: 40px auto 10px auto;
+    color: yellow;
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    width: 80%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+

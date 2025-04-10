@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Section</title>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .movies-section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .movies-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .movie-card {
+            background-color: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .featured-label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 3px;
+        }
+
+        .movie-info {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .movie-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .rating {
+            background-color: yellow;
+            color: black;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="movies-section">
+        <h2>Movies</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <span class="featured-label">FEATURED</span>
+                <a href="movieplayer/interstellar.html">
+                <img src="images/interstellar.jpg" alt="interstellar">
+            </a>
+                <div class="movie-info">
+                    <p class="movie-title">interstellar</p>
+                    <span class="rating">⭐ 8.7</span>
+                </div>
+            </div>
+
+            
+            <div class="movie-card">
+                <span class="featured-label">FEATURED</span>
+                <a href="">
+                <img src="images/Smile (2022).jpg" alt="Smile">
+            </a>
+                <div class="movie-info">
+                    <p class="movie-title">Smile</p>
+                    <span class="rating">⭐ 8.7</span>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <span class="featured-label">FEATURED</span>
+                <img src="images/Movie_poster_i_robot.jpg" alt="i,robot">
+                <div class="movie-info">
+                    <p class="movie-title">i,robot</p>
+                    <span class="rating">⭐ 8.7</span>
+                </div>
+            </div>
+
+            
+        
+            <div class="movie-card">
+                <span class="featured-label">FEATURED</span>
+                <img src="images/310x390 overload_202342.png" alt="overlord the sacred kingdom">
+                <div class="movie-info">
+                    <p class="movie-title">Overlord the sacred kingdom</p>
+                    <span class="rating">⭐ 8.7</span>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+
+</body>
+</html>
+
